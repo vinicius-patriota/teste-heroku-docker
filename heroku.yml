@@ -1,0 +1,4 @@
+build:
+  docker:
+    front: todo-app/front-end/Dockerfile
+    back: todo-app/back-end/Dockerfile
