@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  todoback:
+    image: todobackend
+    restart: always
+    ports:
+      - 3001:3001
+
+  todofront:
+    image: todofrontend
+    restart: always
+    ports:
+      - 3000:3000
+    depends_on:
+      - todoback
